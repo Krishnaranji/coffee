@@ -1,0 +1,189 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+
+    </style>
+
+    <style name="ThemeOverlay.App.DatePicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        ...
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent
+        </item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="AppTheme.Toolbar.Theme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+
+        <!--  <attr name="dividerWidth" format="dimension" />-->
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    //Styles for Navigation Drawer
+
+    <style name="leftBehindMenuScroll">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/blue</item>
+
+    </style>
+
+
+    <!-- <style name="behindMenuItemLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>-->
+
+    <style name="behindMenuItemLabel">//
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="termsAndCond_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <style name="TextLabel">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextLabel_Login">
+        <item name="android:textColorHint">@color/blue</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="toolTip" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textColorTertiary">@color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/black</item>
+        <item name="android:textColorSecondaryInverse">@color/black</item>
+        <item name="android:textColorTertiaryInverse">@color/black</item>
+        <item name="colorAccent">@color/toolt_tipcolor</item>
+
+
+    </style>
+
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <!-- reference our hint & error styles -->
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="colorControlNormal">@color/blue</item>
+        <item name="colorControlActivated">@color/blue</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/text_grey</item>
+        <item name="colorControlActivated">@color/circle_paid</item>
+    </style>
+
+    <!--    <style name="CustomShowcaseTheme" parent="ShowcaseView.Light">-->
+    <!--        <item name="sv_backgroundColor">#3300A621</item>-->
+    <!--        <item name="sv_showcaseColor">#00801A</item>-->
+    <!--        <item name="sv_buttonText">Hide</item>-->
+    <!--        <item name="sv_tintButtonColor">false</item>-->
+    <!--        <item name="sv_titleTextAppearance">@style/CustomTitle</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="CustomShowcaseTheme2" parent="ShowcaseView">-->
+    <!--        <item name="sv_backgroundColor">#e51249d9</item>-->
+    <!--        <item name="sv_showcaseColor">#25467A</item>-->
+    <!--        <item name="sv_buttonText">Close</item>-->
+    <!--        <item name="sv_titleTextAppearance">@style/CustomTitle2</item>-->
+    <!--        <item name="sv_detailTextAppearance">@style/CustomText2</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="CustomShowcaseTheme3" parent="ShowcaseView.Light">-->
+    <!--        <item name="sv_backgroundColor">#c8ed680f</item>-->
+    <!--        <item name="sv_showcaseColor">#ed680f</item>-->
+    <!--        <item name="sv_buttonText">Hide</item>-->
+    <!--        <item name="sv_tintButtonColor">false</item>-->
+    <!--        <item name="sv_titleTextAppearance">@style/CustomTitle2</item>-->
+    <!--        <item name="sv_detailTextAppearance">@style/CustomText2</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="CustomTitle" parent="TextAppearance.ShowcaseView.Title">-->
+    <!--        <item name="android:textColor">#00801A</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="CustomTitle2" parent="TextAppearance.ShowcaseView.Title.Light">-->
+    <!--        <item name="android:textColor">#deffffff</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="CustomText2" parent="TextAppearance.ShowcaseView.Detail.Light">-->
+    <!--        <item name="android:textColor">#8affffff</item>-->
+    <!--    </style>-->
+
+</resources>
